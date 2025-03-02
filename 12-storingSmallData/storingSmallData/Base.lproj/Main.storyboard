@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storingSmallData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter note :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y10-jP-xAa">
+                                <rect key="frame" x="41" y="117" width="310" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="q35-Q7-EVN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODe-NC-X63">
+                                <rect key="frame" x="41" y="174" width="310" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="n51-3H-2Du"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV2-Vi-yAZ">
+                                <rect key="frame" x="84" y="249" width="61" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save"/>
+                                <connections>
+                                    <action selector="saveBotton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgj-37-N88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-zd-X5I">
+                                <rect key="frame" x="230" y="249" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteBotton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlU-YT-CIb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Work to do :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-Eq-8El">
+                                <rect key="frame" x="52" y="346" width="299" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="YYd-4z-lOq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time to do :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSx-N4-Cmk">
+                                <rect key="frame" x="52" y="452" width="299" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y10-jP-xAa" firstAttribute="trailing" secondItem="ODe-NC-X63" secondAttribute="trailing" id="5bf-HO-qDY"/>
+                            <constraint firstItem="QYc-zd-X5I" firstAttribute="baseline" secondItem="kV2-Vi-yAZ" secondAttribute="firstBaseline" id="6jt-ME-7kx"/>
+                            <constraint firstItem="NL4-Eq-8El" firstAttribute="trailing" secondItem="mSx-N4-Cmk" secondAttribute="trailing" id="72r-Tt-mFI"/>
+                            <constraint firstItem="kV2-Vi-yAZ" firstAttribute="top" secondItem="ODe-NC-X63" secondAttribute="bottom" constant="41" id="Cz0-2m-vQq"/>
+                            <constraint firstItem="NL4-Eq-8El" firstAttribute="leading" secondItem="mSx-N4-Cmk" secondAttribute="leading" id="JaP-tw-Z5Y"/>
+                            <constraint firstItem="kV2-Vi-yAZ" firstAttribute="baseline" secondItem="QYc-zd-X5I" secondAttribute="baseline" id="N89-pr-YPF"/>
+                            <constraint firstItem="NL4-Eq-8El" firstAttribute="top" secondItem="kV2-Vi-yAZ" secondAttribute="bottom" constant="62" id="S2K-9Q-mnP"/>
+                            <constraint firstItem="Y10-jP-xAa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPd-1F-L3X"/>
+                            <constraint firstItem="mSx-N4-Cmk" firstAttribute="top" secondItem="NL4-Eq-8El" secondAttribute="bottom" constant="49" id="TI1-zj-ZTy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mSx-N4-Cmk" secondAttribute="bottom" constant="309" id="Wdr-xR-WEn"/>
+                            <constraint firstItem="QYc-zd-X5I" firstAttribute="leading" secondItem="kV2-Vi-yAZ" secondAttribute="trailing" constant="85" id="YhK-aJ-Xgn"/>
+                            <constraint firstItem="Y10-jP-xAa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="cNw-mt-827"/>
+                            <constraint firstItem="kV2-Vi-yAZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="csF-yN-kB6"/>
+                            <constraint firstItem="NL4-Eq-8El" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="gHd-gR-Gkn"/>
+                            <constraint firstItem="Y10-jP-xAa" firstAttribute="leading" secondItem="ODe-NC-X63" secondAttribute="leading" id="h3h-aE-c45"/>
+                            <constraint firstItem="ODe-NC-X63" firstAttribute="top" secondItem="Y10-jP-xAa" secondAttribute="bottom" constant="23" id="lOr-IN-rzl"/>
+                            <constraint firstItem="Y10-jP-xAa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="ltg-ES-LCV"/>
+                            <constraint firstItem="ODe-NC-X63" firstAttribute="trailing" secondItem="NL4-Eq-8El" secondAttribute="trailing" id="oNa-Zt-TL9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noteTextField" destination="Y10-jP-xAa" id="pwu-tM-sTH"/>
+                        <outlet property="timeTextField" destination="ODe-NC-X63" id="Piy-KL-Wo0"/>
+                        <outlet property="timeToDoLabel" destination="mSx-N4-Cmk" id="0NX-tE-Ccg"/>
+                        <outlet property="workToDoLabel" destination="NL4-Eq-8El" id="Uzo-mc-SlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.99236641221376" y="63.380281690140848"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
