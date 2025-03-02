@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ımageAndStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="utv-B5-3dl">
+                                <rect key="frame" x="26" y="185" width="341" height="151"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Charizard" translatesAutoresizingMaskIntoConstraints="NO" id="q6r-B8-EpL">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="86N-UL-lvO"/>
+                                            <constraint firstAttribute="height" constant="151" id="tHL-6s-P6g"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alakazam" translatesAutoresizingMaskIntoConstraints="NO" id="PWV-kz-fX8">
+                                        <rect key="frame" x="118" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="XTA-kP-VrS"/>
+                                            <constraint firstAttribute="height" constant="151" id="bkA-Mi-wki"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="Lqt-tI-Rff">
+                                        <rect key="frame" x="236" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="151" id="3Ej-4Z-amR"/>
+                                            <constraint firstAttribute="width" constant="105" id="OBk-6R-Tn3"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="Qr4-Bb-CyO"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="tSd-56-ZC0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ae0-Ez-4MA">
+                                <rect key="frame" x="26" y="496" width="339" height="151"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mewtwo" translatesAutoresizingMaskIntoConstraints="NO" id="k0o-TC-SiZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="IY2-Eq-lqm"/>
+                                            <constraint firstAttribute="height" constant="151" id="yRT-Ro-ulY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venusaur" translatesAutoresizingMaskIntoConstraints="NO" id="EgQ-s5-R4P">
+                                        <rect key="frame" x="117" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="151" id="SYc-4e-Rnj"/>
+                                            <constraint firstAttribute="width" constant="105" id="guK-GG-Cab"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trainer" translatesAutoresizingMaskIntoConstraints="NO" id="leK-RC-4m6">
+                                        <rect key="frame" x="234" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="dY8-gZ-bE1"/>
+                                            <constraint firstAttribute="height" constant="151" id="oS2-if-nIN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="KqY-W7-zQf"/>
+                                    <constraint firstAttribute="width" constant="339" id="UiK-Yo-iMv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="bue-H1-OBr">
+                                <rect key="frame" x="26" y="344" width="341" height="151"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blastoise" translatesAutoresizingMaskIntoConstraints="NO" id="EoF-GU-4VA">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="151" id="QAN-Ra-Gxg"/>
+                                            <constraint firstAttribute="width" constant="105" id="xdm-zW-vgr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chansey" translatesAutoresizingMaskIntoConstraints="NO" id="iTA-8l-cxu">
+                                        <rect key="frame" x="118" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="ois-fo-67e"/>
+                                            <constraint firstAttribute="height" constant="151" id="xqj-MK-xwL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Machamp" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-XI-QSa">
+                                        <rect key="frame" x="236" y="0.0" width="105" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="151" id="6pt-Xx-Jf1"/>
+                                            <constraint firstAttribute="width" constant="105" id="Xin-Cy-aas"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="151" id="ci2-z3-ODJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="hmH-73-Lu0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bue-H1-OBr" firstAttribute="leading" secondItem="ae0-Ez-4MA" secondAttribute="leading" id="FeO-vP-1tv"/>
+                            <constraint firstItem="utv-B5-3dl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="THM-3k-q8F"/>
+                            <constraint firstItem="utv-B5-3dl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X6K-T9-PFe"/>
+                            <constraint firstItem="bue-H1-OBr" firstAttribute="top" secondItem="utv-B5-3dl" secondAttribute="bottom" constant="8" id="goi-6s-Gqe"/>
+                            <constraint firstItem="utv-B5-3dl" firstAttribute="leading" secondItem="bue-H1-OBr" secondAttribute="leading" id="xpY-RK-t2J"/>
+                            <constraint firstItem="ae0-Ez-4MA" firstAttribute="top" secondItem="bue-H1-OBr" secondAttribute="bottom" constant="1" id="zcw-iO-80S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Alakazam" width="245" height="342"/>
+        <image name="Blastoise" width="245" height="342"/>
+        <image name="Chansey" width="245" height="342"/>
+        <image name="Charizard" width="245" height="342"/>
+        <image name="Machamp" width="245" height="342"/>
+        <image name="Mewtwo" width="245" height="342"/>
+        <image name="Pikachu" width="245" height="342"/>
+        <image name="Trainer" width="245" height="342"/>
+        <image name="Venusaur" width="245" height="342"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
